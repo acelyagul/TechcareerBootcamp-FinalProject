@@ -27,3 +27,4 @@ Bu proje, kariyer.net iş arama sayfasındaki il,içe,tarih ve pozisyon seviyesi
  ``` robot Tests/KariyerNetFilterTest.robot  ```
  
  Sonuçlar "Results" klasörü altında raporlanmaktadır. 
+
