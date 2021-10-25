@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211024 21:09:43.453" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.1 (Python 3.10.0 on win32)" generated="20211025 17:01:15.802" rpa="false" schemaversion="2">
 <suite id="s1" name="KariyerNetFilterTest" source="C:\Users\Lenovo\Desktop\ProjeOdevi\Tests\KariyerNetFilterTest.robot">
 <test id="s1-t1" name="verify the filters">
 <kw name="check the filter page" library="kariyerNetApp">
@@ -8,247 +8,310 @@
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211024 21:09:43.971" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20211024 21:09:43.970" endtime="20211024 21:09:46.117"/>
+<msg timestamp="20211025 17:01:16.317" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211025 17:01:16.317" endtime="20211025 17:01:18.292"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211024 21:09:46.118" endtime="20211024 21:09:46.253"/>
+<status status="PASS" starttime="20211025 17:01:18.292" endtime="20211025 17:01:18.440"/>
 </kw>
-<status status="PASS" starttime="20211024 21:09:43.970" endtime="20211024 21:09:46.253"/>
+<status status="PASS" starttime="20211025 17:01:16.316" endtime="20211025 17:01:18.441"/>
 </kw>
 <kw name="go to Homopage" library="kariyerNet">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${HOMOPAGE}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211024 21:09:46.255" level="INFO">Opening url 'https://www.kariyer.net/'</msg>
-<status status="PASS" starttime="20211024 21:09:46.254" endtime="20211024 21:09:49.936"/>
+<msg timestamp="20211025 17:01:18.443" level="INFO">Opening url 'https://www.kariyer.net/'</msg>
+<status status="PASS" starttime="20211025 17:01:18.442" endtime="20211025 17:01:22.266"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="index-page"]/body/div[6]/div[1]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:09:49.938" level="INFO">Clicking element 'xpath://*[@id="index-page"]/body/div[6]/div[1]/button'.</msg>
-<status status="PASS" starttime="20211024 21:09:49.936" endtime="20211024 21:09:50.172"/>
+<msg timestamp="20211025 17:01:22.267" level="INFO">Clicking element 'xpath://*[@id="index-page"]/body/div[6]/div[1]/button'.</msg>
+<status status="PASS" starttime="20211025 17:01:22.266" endtime="20211025 17:01:22.479"/>
 </kw>
-<status status="PASS" starttime="20211024 21:09:46.254" endtime="20211024 21:09:50.173"/>
+<status status="PASS" starttime="20211025 17:01:18.441" endtime="20211025 17:01:22.479"/>
 </kw>
 <kw name="go to detailed search page" library="kariyerNet">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>DETAYLI ARA</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211024 21:09:50.174" endtime="20211024 21:09:50.213"/>
+<status status="PASS" starttime="20211025 17:01:22.480" endtime="20211025 17:01:22.534"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=btnFindDetailWork</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:09:50.214" level="INFO">Clicking element 'id=btnFindDetailWork'.</msg>
-<status status="PASS" starttime="20211024 21:09:50.213" endtime="20211024 21:09:55.402"/>
+<msg timestamp="20211025 17:01:22.535" level="INFO">Clicking element 'id=btnFindDetailWork'.</msg>
+<status status="PASS" starttime="20211025 17:01:22.535" endtime="20211025 17:01:27.708"/>
 </kw>
-<status status="PASS" starttime="20211024 21:09:50.173" endtime="20211024 21:09:55.403"/>
+<status status="PASS" starttime="20211025 17:01:22.479" endtime="20211025 17:01:27.708"/>
 </kw>
 <kw name="check the job search page" library="kariyerNet">
 <kw name="Wait Until Location Contains" library="SeleniumLibrary">
 <arg>ilanlari</arg>
 <doc>Waits until the current URL contains ``expected``.</doc>
-<status status="PASS" starttime="20211024 21:09:55.404" endtime="20211024 21:09:55.463"/>
+<status status="PASS" starttime="20211025 17:01:27.710" endtime="20211025 17:01:27.807"/>
 </kw>
-<status status="PASS" starttime="20211024 21:09:55.403" endtime="20211024 21:09:55.463"/>
+<status status="PASS" starttime="20211025 17:01:27.709" endtime="20211025 17:01:27.807"/>
 </kw>
 <kw name="select the city" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=.cursor-pointer.text-secondary .material-icons</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:09:55.465" level="INFO">Clicking element 'css=.cursor-pointer.text-secondary .material-icons'.</msg>
-<status status="PASS" starttime="20211024 21:09:55.464" endtime="20211024 21:09:56.008"/>
+<msg timestamp="20211025 17:01:27.809" level="INFO">Clicking element 'css=.cursor-pointer.text-secondary .material-icons'.</msg>
+<status status="PASS" starttime="20211025 17:01:27.809" endtime="20211025 17:01:28.234"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=[placeholder="Şehir Ara"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211024 21:09:56.008" endtime="20211024 21:09:56.147"/>
+<status status="PASS" starttime="20211025 17:01:28.234" endtime="20211025 17:01:28.504"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css=[placeholder="Şehir Ara"]</arg>
 <arg>Mersin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211024 21:09:56.149" level="INFO">Typing text 'Mersin' into text field 'css=[placeholder="Şehir Ara"]'.</msg>
-<status status="PASS" starttime="20211024 21:09:56.148" endtime="20211024 21:09:58.203"/>
+<msg timestamp="20211025 17:01:28.505" level="INFO">Typing text 'Mersin' into text field 'css=[placeholder="Şehir Ara"]'.</msg>
+<status status="PASS" starttime="20211025 17:01:28.504" endtime="20211025 17:01:30.315"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211024 21:10:00.210" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211024 21:09:58.204" endtime="20211024 21:10:00.210"/>
+<msg timestamp="20211025 17:01:32.329" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211025 17:01:30.315" endtime="20211025 17:01:32.330"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=.modal-body.mr-4.pr-3 .value.w-auto</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:00.212" level="INFO">Clicking element 'css=.modal-body.mr-4.pr-3 .value.w-auto'.</msg>
-<status status="PASS" starttime="20211024 21:10:00.211" endtime="20211024 21:10:00.725"/>
+<msg timestamp="20211025 17:01:32.332" level="INFO">Clicking element 'css=.modal-body.mr-4.pr-3 .value.w-auto'.</msg>
+<status status="PASS" starttime="20211025 17:01:32.331" endtime="20211025 17:01:32.561"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=.modal-blue-border.k-shadow [class='material-icons p-1']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:00.726" level="INFO">Clicking element 'css=.modal-blue-border.k-shadow [class='material-icons p-1']'.</msg>
-<status status="PASS" starttime="20211024 21:10:00.725" endtime="20211024 21:10:01.496"/>
+<msg timestamp="20211025 17:01:32.564" level="INFO">Clicking element 'css=.modal-blue-border.k-shadow [class='material-icons p-1']'.</msg>
+<status status="PASS" starttime="20211025 17:01:32.562" endtime="20211025 17:01:33.263"/>
 </kw>
-<status status="PASS" starttime="20211024 21:09:55.464" endtime="20211024 21:10:01.496"/>
+<status status="PASS" starttime="20211025 17:01:27.808" endtime="20211025 17:01:33.264"/>
 </kw>
 <kw name="select the district" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=[data-test="district-title"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:01.500" level="INFO">Clicking element 'css=[data-test="district-title"]'.</msg>
-<status status="PASS" starttime="20211024 21:10:01.498" endtime="20211024 21:10:02.387"/>
+<msg timestamp="20211025 17:01:33.266" level="INFO">Clicking element 'css=[data-test="district-title"]'.</msg>
+<status status="PASS" starttime="20211025 17:01:33.265" endtime="20211025 17:01:33.730"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=[placeholder="İlçe Ara"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211024 21:10:02.387" endtime="20211024 21:10:02.468"/>
+<status status="PASS" starttime="20211025 17:01:33.731" endtime="20211025 17:01:33.810"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css=[placeholder="İlçe Ara"]</arg>
 <arg>Yenişehir</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:02.468" level="INFO">Typing text 'Yenişehir' into text field 'css=[placeholder="İlçe Ara"]'.</msg>
-<status status="PASS" starttime="20211024 21:10:02.468" endtime="20211024 21:10:03.104"/>
+<msg timestamp="20211025 17:01:33.811" level="INFO">Typing text 'Yenişehir' into text field 'css=[placeholder="İlçe Ara"]'.</msg>
+<status status="PASS" starttime="20211025 17:01:33.811" endtime="20211025 17:01:34.220"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211024 21:10:05.106" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211024 21:10:03.104" endtime="20211024 21:10:05.106"/>
+<msg timestamp="20211025 17:01:36.223" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211025 17:01:34.220" endtime="20211025 17:01:36.223"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://div[@id='filter-section']/div[@class='k-space large right']/div/div[1]/div/div[2]/div/div[3]/div[@class='calculated-width']/div[@role='dialog']/div/div/div[@class='modal-body mr-4 pr-3']//div[@class='value w-auto']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:05.108" level="INFO">Clicking element 'xpath://div[@id='filter-section']/div[@class='k-space large right']/div/div[1]/div/div[2]/div/div[3]/div[@class='calculated-width']/div[@role='dialog']/div/div/div[@class='modal-body mr-4 pr-3']//div[@class='value w-auto']'.</msg>
-<status status="PASS" starttime="20211024 21:10:05.107" endtime="20211024 21:10:05.324"/>
+<msg timestamp="20211025 17:01:36.224" level="INFO">Clicking element 'xpath://div[@id='filter-section']/div[@class='k-space large right']/div/div[1]/div/div[2]/div/div[3]/div[@class='calculated-width']/div[@role='dialog']/div/div/div[@class='modal-body mr-4 pr-3']//div[@class='value w-auto']'.</msg>
+<status status="PASS" starttime="20211025 17:01:36.224" endtime="20211025 17:01:36.397"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=.modal-backdrop</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:05.324" level="INFO">Clicking element 'css=.modal-backdrop'.</msg>
-<status status="PASS" starttime="20211024 21:10:05.324" endtime="20211024 21:10:05.625"/>
+<msg timestamp="20211025 17:01:36.398" level="INFO">Clicking element 'css=.modal-backdrop'.</msg>
+<status status="PASS" starttime="20211025 17:01:36.397" endtime="20211025 17:01:36.610"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:01.497" endtime="20211024 21:10:05.625"/>
+<status status="PASS" starttime="20211025 17:01:33.264" endtime="20211025 17:01:36.610"/>
 </kw>
 <kw name="click the 3 date" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=div:nth-of-type(5) &gt; .custom-control-label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:05.626" level="INFO">Clicking element 'css=div:nth-of-type(5) &gt; .custom-control-label'.</msg>
-<status status="PASS" starttime="20211024 21:10:05.626" endtime="20211024 21:10:05.844"/>
+<msg timestamp="20211025 17:01:36.613" level="INFO">Clicking element 'css=div:nth-of-type(5) &gt; .custom-control-label'.</msg>
+<status status="PASS" starttime="20211025 17:01:36.611" endtime="20211025 17:01:36.770"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:05.625" endtime="20211024 21:10:05.845"/>
+<status status="PASS" starttime="20211025 17:01:36.610" endtime="20211025 17:01:36.771"/>
 </kw>
 <kw name="click the expert" library="kariyerNet">
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>css=div:nth-child(6) [class='title text-secondary t-2 w-5']</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20211024 21:10:05.846" endtime="20211024 21:10:06.241"/>
+<status status="PASS" starttime="20211025 17:01:36.773" endtime="20211025 17:01:37.412"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=div:nth-of-type(4) &gt; .bg-white.k-filter-checkbox .collapse.collapse-content.pt-2.show.w-100 &gt; div &gt; div:nth-of-type(4) &gt; .checkbox-items &gt; .k-checkbox-items &gt; .custom-checkbox.custom-control &gt; .custom-control-label &gt; .value.w-auto</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:06.241" level="INFO">Clicking element 'css=div:nth-of-type(4) &gt; .bg-white.k-filter-checkbox .collapse.collapse-content.pt-2.show.w-100 &gt; div &gt; div:nth-of-type(4) &gt; .checkbox-items &gt; .k-checkbox-items &gt; .custom-checkbox.custom-control &gt; .custom-control-label &gt; .value.w-auto'.</msg>
-<status status="PASS" starttime="20211024 21:10:06.241" endtime="20211024 21:10:06.451"/>
+<msg timestamp="20211025 17:01:37.413" level="INFO">Clicking element 'css=div:nth-of-type(4) &gt; .bg-white.k-filter-checkbox .collapse.collapse-content.pt-2.show.w-100 &gt; div &gt; div:nth-of-type(4) &gt; .checkbox-items &gt; .k-checkbox-items &gt; .custom-checkbox.custom-control &gt; .custom-control-label &gt; .value.w-auto'.</msg>
+<status status="PASS" starttime="20211025 17:01:37.412" endtime="20211025 17:01:37.777"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:05.845" endtime="20211024 21:10:06.452"/>
+<status status="PASS" starttime="20211025 17:01:36.772" endtime="20211025 17:01:37.778"/>
 </kw>
 <kw name="click the apply" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=[data-test="apply-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:06.452" level="INFO">Clicking element 'css=[data-test="apply-button"]'.</msg>
-<status status="PASS" starttime="20211024 21:10:06.452" endtime="20211024 21:10:06.673"/>
+<msg timestamp="20211025 17:01:37.780" level="INFO">Clicking element 'css=[data-test="apply-button"]'.</msg>
+<status status="PASS" starttime="20211025 17:01:37.779" endtime="20211025 17:01:37.962"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:06.452" endtime="20211024 21:10:06.673"/>
+<status status="PASS" starttime="20211025 17:01:37.778" endtime="20211025 17:01:37.963"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211024 21:10:11.678" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211024 21:10:06.674" endtime="20211024 21:10:11.678"/>
+<msg timestamp="20211025 17:01:42.972" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211025 17:01:37.963" endtime="20211025 17:01:42.972"/>
 </kw>
 <kw name="check the filters" library="kariyerNet">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Seçili Filtreler (4)</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211024 21:10:11.708" level="INFO">Current page contains text 'Seçili Filtreler (4)'.</msg>
-<status status="PASS" starttime="20211024 21:10:11.679" endtime="20211024 21:10:11.709"/>
+<msg timestamp="20211025 17:01:43.005" level="INFO">Current page contains text 'Seçili Filtreler (4)'.</msg>
+<status status="PASS" starttime="20211025 17:01:42.973" endtime="20211025 17:01:43.005"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>css=.chips-wrapper</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211024 21:10:11.727" level="INFO">Current page contains element 'css=.chips-wrapper'.</msg>
-<status status="PASS" starttime="20211024 21:10:11.709" endtime="20211024 21:10:11.727"/>
+<msg timestamp="20211025 17:01:43.024" level="INFO">Current page contains element 'css=.chips-wrapper'.</msg>
+<status status="PASS" starttime="20211025 17:01:43.005" endtime="20211025 17:01:43.025"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:11.679" endtime="20211024 21:10:11.727"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${FirstFullText}</var>
+<arg>css=.mb-3.search-result-section.t-6.text-secondary</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211025 17:01:43.066" level="INFO">${FirstFullText} = 3
+Mersin Yenişehir
+İş İlanları</msg>
+<status status="PASS" starttime="20211025 17:01:43.025" endtime="20211025 17:01:43.066"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${FirstValue}</var>
+<arg>re.search(r'\\d+', '''${FirstFullText}''').group(0)</arg>
+<arg>re</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211025 17:01:43.067" level="INFO">${FirstValue} = 3</msg>
+<status status="PASS" starttime="20211025 17:01:43.066" endtime="20211025 17:01:43.068"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${FirstValue}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20211025 17:01:43.069" level="INFO">${FirstValue} = 3</msg>
+<status status="PASS" starttime="20211025 17:01:43.068" endtime="20211025 17:01:43.069"/>
+</kw>
+<status status="PASS" starttime="20211025 17:01:42.973" endtime="20211025 17:01:43.069"/>
 </kw>
 <kw name="click on the remove district filter" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=div:nth-of-type(2) &gt; .material-icons</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:11.728" level="INFO">Clicking element 'css=div:nth-of-type(2) &gt; .material-icons'.</msg>
-<status status="PASS" starttime="20211024 21:10:11.728" endtime="20211024 21:10:11.890"/>
+<msg timestamp="20211025 17:01:43.070" level="INFO">Clicking element 'css=div:nth-of-type(2) &gt; .material-icons'.</msg>
+<status status="PASS" starttime="20211025 17:01:43.070" endtime="20211025 17:01:43.234"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:11.728" endtime="20211024 21:10:11.890"/>
+<status status="PASS" starttime="20211025 17:01:43.069" endtime="20211025 17:01:43.234"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211025 17:01:48.241" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211025 17:01:43.234" endtime="20211025 17:01:48.241"/>
 </kw>
 <kw name="check the removed district filter" library="kariyerNet">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Seçili Filtreler (3)</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211024 21:10:11.959" level="INFO">Current page contains text 'Seçili Filtreler (3)'.</msg>
-<status status="PASS" starttime="20211024 21:10:11.891" endtime="20211024 21:10:11.959"/>
+<msg timestamp="20211025 17:01:48.273" level="INFO">Current page contains text 'Seçili Filtreler (3)'.</msg>
+<status status="PASS" starttime="20211025 17:01:48.241" endtime="20211025 17:01:48.273"/>
 </kw>
 <kw name="Page Should Not Contain Element" library="SeleniumLibrary">
 <arg>rxpath:///span[@innertext='Yenişehir']</arg>
 <doc>Verifies that element ``locator`` is not found on the current page.</doc>
-<msg timestamp="20211024 21:10:11.999" level="INFO">Current page does not contain element 'rxpath:///span[@innertext='Yenişehir']'.</msg>
-<status status="PASS" starttime="20211024 21:10:11.959" endtime="20211024 21:10:11.999"/>
+<msg timestamp="20211025 17:01:48.296" level="INFO">Current page does not contain element 'rxpath:///span[@innertext='Yenişehir']'.</msg>
+<status status="PASS" starttime="20211025 17:01:48.273" endtime="20211025 17:01:48.296"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:11.891" endtime="20211024 21:10:11.999"/>
+<status status="PASS" starttime="20211025 17:01:48.241" endtime="20211025 17:01:48.296"/>
 </kw>
 <kw name="click on the removed expert filter" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=div:nth-of-type(3) &gt; .material-icons</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:12.000" level="INFO">Clicking element 'css=div:nth-of-type(3) &gt; .material-icons'.</msg>
-<status status="PASS" starttime="20211024 21:10:12.000" endtime="20211024 21:10:12.588"/>
+<msg timestamp="20211025 17:01:48.297" level="INFO">Clicking element 'css=div:nth-of-type(3) &gt; .material-icons'.</msg>
+<status status="PASS" starttime="20211025 17:01:48.297" endtime="20211025 17:01:48.431"/>
 </kw>
 <kw name="Page Should Not Contain Element" library="SeleniumLibrary">
 <arg>rxpath:///span[@innertext='Uzman']</arg>
 <doc>Verifies that element ``locator`` is not found on the current page.</doc>
-<msg timestamp="20211024 21:10:13.595" level="INFO">Current page does not contain element 'rxpath:///span[@innertext='Uzman']'.</msg>
-<status status="PASS" starttime="20211024 21:10:12.589" endtime="20211024 21:10:13.596"/>
+<msg timestamp="20211025 17:01:48.452" level="INFO">Current page does not contain element 'rxpath:///span[@innertext='Uzman']'.</msg>
+<status status="PASS" starttime="20211025 17:01:48.432" endtime="20211025 17:01:48.452"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:11.999" endtime="20211024 21:10:13.597"/>
+<status status="PASS" starttime="20211025 17:01:48.296" endtime="20211025 17:01:48.452"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211025 17:01:53.457" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211025 17:01:48.453" endtime="20211025 17:01:53.457"/>
 </kw>
 <kw name="check the removed expert filer" library="kariyerNet">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Seçili Filtreler (2)</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211024 21:10:13.835" level="INFO">Current page contains text 'Seçili Filtreler (2)'.</msg>
-<status status="PASS" starttime="20211024 21:10:13.599" endtime="20211024 21:10:13.835"/>
+<msg timestamp="20211025 17:01:53.483" level="INFO">Current page contains text 'Seçili Filtreler (2)'.</msg>
+<status status="PASS" starttime="20211025 17:01:53.458" endtime="20211025 17:01:53.483"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:13.597" endtime="20211024 21:10:13.835"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${SecondFullText}</var>
+<arg>css=.mb-3.search-result-section.t-6.text-secondary</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211025 17:01:53.599" level="INFO">${SecondFullText} = 262
+Mersin
+İş İlanları</msg>
+<status status="PASS" starttime="20211025 17:01:53.483" endtime="20211025 17:01:53.599"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${SecondValue}</var>
+<arg>re.search(r'\\d+', '''${SecondFullText}''').group(0)</arg>
+<arg>re</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211025 17:01:53.599" level="INFO">${SecondValue} = 262</msg>
+<status status="PASS" starttime="20211025 17:01:53.599" endtime="20211025 17:01:53.599"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${SecondValue}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20211025 17:01:53.600" level="INFO">${SecondValue} = 262</msg>
+<status status="PASS" starttime="20211025 17:01:53.600" endtime="20211025 17:01:53.600"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${FirstValue}&lt;${SecondValue}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211025 17:01:53.600" endtime="20211025 17:01:53.601"/>
+</kw>
+<status status="PASS" starttime="20211025 17:01:53.458" endtime="20211025 17:01:53.601"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211024 21:10:18.838" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211024 21:10:13.836" endtime="20211024 21:10:18.838"/>
+<msg timestamp="20211025 17:01:58.607" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211025 17:01:53.601" endtime="20211025 17:01:58.607"/>
 </kw>
 <kw name="close the browser" library="kariyerNet">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211024 21:10:18.839" endtime="20211024 21:10:21.296"/>
+<status status="PASS" starttime="20211025 17:01:58.608" endtime="20211025 17:02:01.027"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:18.838" endtime="20211024 21:10:21.296"/>
+<status status="PASS" starttime="20211025 17:01:58.608" endtime="20211025 17:02:01.028"/>
 </kw>
-<status status="PASS" starttime="20211024 21:09:43.969" endtime="20211024 21:10:21.296"/>
+<status status="PASS" starttime="20211025 17:01:16.316" endtime="20211025 17:02:01.028"/>
 </kw>
-<status status="PASS" starttime="20211024 21:09:43.967" endtime="20211024 21:10:21.297"/>
+<status status="PASS" starttime="20211025 17:01:16.315" endtime="20211025 17:02:01.029"/>
 </test>
 <test id="s1-t2" name="verify the clear all filters">
 <kw name="check the clear filters and date filter" library="kariyerNetApp">
@@ -257,210 +320,275 @@
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211024 21:10:21.301" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20211024 21:10:21.300" endtime="20211024 21:10:23.520"/>
+<msg timestamp="20211025 17:02:01.033" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211025 17:02:01.033" endtime="20211025 17:02:03.171"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211024 21:10:23.520" endtime="20211024 21:10:23.658"/>
+<status status="PASS" starttime="20211025 17:02:03.171" endtime="20211025 17:02:03.302"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:21.300" endtime="20211024 21:10:23.658"/>
+<status status="PASS" starttime="20211025 17:02:01.032" endtime="20211025 17:02:03.302"/>
 </kw>
 <kw name="go to Homopage" library="kariyerNet">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${HOMOPAGE}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211024 21:10:23.659" level="INFO">Opening url 'https://www.kariyer.net/'</msg>
-<status status="PASS" starttime="20211024 21:10:23.659" endtime="20211024 21:10:27.125"/>
+<msg timestamp="20211025 17:02:03.303" level="INFO">Opening url 'https://www.kariyer.net/'</msg>
+<status status="PASS" starttime="20211025 17:02:03.303" endtime="20211025 17:02:06.736"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="index-page"]/body/div[6]/div[1]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:27.125" level="INFO">Clicking element 'xpath://*[@id="index-page"]/body/div[6]/div[1]/button'.</msg>
-<status status="PASS" starttime="20211024 21:10:27.125" endtime="20211024 21:10:27.375"/>
+<msg timestamp="20211025 17:02:06.737" level="INFO">Clicking element 'xpath://*[@id="index-page"]/body/div[6]/div[1]/button'.</msg>
+<status status="PASS" starttime="20211025 17:02:06.736" endtime="20211025 17:02:06.962"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:23.658" endtime="20211024 21:10:27.375"/>
+<status status="PASS" starttime="20211025 17:02:03.302" endtime="20211025 17:02:06.962"/>
 </kw>
 <kw name="go to detailed search page" library="kariyerNet">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>DETAYLI ARA</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211024 21:10:27.376" endtime="20211024 21:10:27.398"/>
+<status status="PASS" starttime="20211025 17:02:06.964" endtime="20211025 17:02:07.002"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=btnFindDetailWork</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:27.399" level="INFO">Clicking element 'id=btnFindDetailWork'.</msg>
-<status status="PASS" starttime="20211024 21:10:27.398" endtime="20211024 21:10:33.027"/>
+<msg timestamp="20211025 17:02:07.003" level="INFO">Clicking element 'id=btnFindDetailWork'.</msg>
+<status status="PASS" starttime="20211025 17:02:07.002" endtime="20211025 17:02:11.978"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:27.376" endtime="20211024 21:10:33.027"/>
+<status status="PASS" starttime="20211025 17:02:06.963" endtime="20211025 17:02:11.978"/>
 </kw>
 <kw name="check the job search page" library="kariyerNet">
 <kw name="Wait Until Location Contains" library="SeleniumLibrary">
 <arg>ilanlari</arg>
 <doc>Waits until the current URL contains ``expected``.</doc>
-<status status="PASS" starttime="20211024 21:10:33.028" endtime="20211024 21:10:33.061"/>
+<status status="PASS" starttime="20211025 17:02:11.980" endtime="20211025 17:02:12.003"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:33.027" endtime="20211024 21:10:33.062"/>
+<status status="PASS" starttime="20211025 17:02:11.979" endtime="20211025 17:02:12.003"/>
 </kw>
 <kw name="select the city" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=.cursor-pointer.text-secondary .material-icons</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:33.064" level="INFO">Clicking element 'css=.cursor-pointer.text-secondary .material-icons'.</msg>
-<status status="PASS" starttime="20211024 21:10:33.063" endtime="20211024 21:10:33.372"/>
+<msg timestamp="20211025 17:02:12.005" level="INFO">Clicking element 'css=.cursor-pointer.text-secondary .material-icons'.</msg>
+<status status="PASS" starttime="20211025 17:02:12.004" endtime="20211025 17:02:12.813"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=[placeholder="Şehir Ara"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211024 21:10:33.372" endtime="20211024 21:10:33.584"/>
+<status status="PASS" starttime="20211025 17:02:12.814" endtime="20211025 17:02:12.878"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css=[placeholder="Şehir Ara"]</arg>
 <arg>Mersin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:33.585" level="INFO">Typing text 'Mersin' into text field 'css=[placeholder="Şehir Ara"]'.</msg>
-<status status="PASS" starttime="20211024 21:10:33.585" endtime="20211024 21:10:34.081"/>
+<msg timestamp="20211025 17:02:12.879" level="INFO">Typing text 'Mersin' into text field 'css=[placeholder="Şehir Ara"]'.</msg>
+<status status="PASS" starttime="20211025 17:02:12.878" endtime="20211025 17:02:14.110"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211024 21:10:36.093" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211024 21:10:34.081" endtime="20211024 21:10:36.093"/>
+<msg timestamp="20211025 17:02:16.113" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211025 17:02:14.111" endtime="20211025 17:02:16.113"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=.modal-body.mr-4.pr-3 .value.w-auto</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:36.094" level="INFO">Clicking element 'css=.modal-body.mr-4.pr-3 .value.w-auto'.</msg>
-<status status="PASS" starttime="20211024 21:10:36.093" endtime="20211024 21:10:36.321"/>
+<msg timestamp="20211025 17:02:16.114" level="INFO">Clicking element 'css=.modal-body.mr-4.pr-3 .value.w-auto'.</msg>
+<status status="PASS" starttime="20211025 17:02:16.113" endtime="20211025 17:02:16.272"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=.modal-blue-border.k-shadow [class='material-icons p-1']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:36.323" level="INFO">Clicking element 'css=.modal-blue-border.k-shadow [class='material-icons p-1']'.</msg>
-<status status="PASS" starttime="20211024 21:10:36.322" endtime="20211024 21:10:36.667"/>
+<msg timestamp="20211025 17:02:16.273" level="INFO">Clicking element 'css=.modal-blue-border.k-shadow [class='material-icons p-1']'.</msg>
+<status status="PASS" starttime="20211025 17:02:16.273" endtime="20211025 17:02:16.560"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:33.062" endtime="20211024 21:10:36.668"/>
+<status status="PASS" starttime="20211025 17:02:12.004" endtime="20211025 17:02:16.561"/>
 </kw>
 <kw name="select the district" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=[data-test="district-title"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:36.669" level="INFO">Clicking element 'css=[data-test="district-title"]'.</msg>
-<status status="PASS" starttime="20211024 21:10:36.668" endtime="20211024 21:10:36.984"/>
+<msg timestamp="20211025 17:02:16.563" level="INFO">Clicking element 'css=[data-test="district-title"]'.</msg>
+<status status="PASS" starttime="20211025 17:02:16.562" endtime="20211025 17:02:16.820"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=[placeholder="İlçe Ara"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211024 21:10:36.984" endtime="20211024 21:10:37.083"/>
+<status status="PASS" starttime="20211025 17:02:16.820" endtime="20211025 17:02:16.899"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css=[placeholder="İlçe Ara"]</arg>
 <arg>Yenişehir</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:37.083" level="INFO">Typing text 'Yenişehir' into text field 'css=[placeholder="İlçe Ara"]'.</msg>
-<status status="PASS" starttime="20211024 21:10:37.083" endtime="20211024 21:10:37.587"/>
+<msg timestamp="20211025 17:02:16.900" level="INFO">Typing text 'Yenişehir' into text field 'css=[placeholder="İlçe Ara"]'.</msg>
+<status status="PASS" starttime="20211025 17:02:16.899" endtime="20211025 17:02:17.258"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211024 21:10:39.598" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211024 21:10:37.588" endtime="20211024 21:10:39.598"/>
+<msg timestamp="20211025 17:02:19.270" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211025 17:02:17.258" endtime="20211025 17:02:19.270"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://div[@id='filter-section']/div[@class='k-space large right']/div/div[1]/div/div[2]/div/div[3]/div[@class='calculated-width']/div[@role='dialog']/div/div/div[@class='modal-body mr-4 pr-3']//div[@class='value w-auto']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:39.599" level="INFO">Clicking element 'xpath://div[@id='filter-section']/div[@class='k-space large right']/div/div[1]/div/div[2]/div/div[3]/div[@class='calculated-width']/div[@role='dialog']/div/div/div[@class='modal-body mr-4 pr-3']//div[@class='value w-auto']'.</msg>
-<status status="PASS" starttime="20211024 21:10:39.598" endtime="20211024 21:10:39.794"/>
+<msg timestamp="20211025 17:02:19.271" level="INFO">Clicking element 'xpath://div[@id='filter-section']/div[@class='k-space large right']/div/div[1]/div/div[2]/div/div[3]/div[@class='calculated-width']/div[@role='dialog']/div/div/div[@class='modal-body mr-4 pr-3']//div[@class='value w-auto']'.</msg>
+<status status="PASS" starttime="20211025 17:02:19.271" endtime="20211025 17:02:19.362"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=.modal-backdrop</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:39.795" level="INFO">Clicking element 'css=.modal-backdrop'.</msg>
-<status status="PASS" starttime="20211024 21:10:39.794" endtime="20211024 21:10:40.034"/>
+<msg timestamp="20211025 17:02:19.362" level="INFO">Clicking element 'css=.modal-backdrop'.</msg>
+<status status="PASS" starttime="20211025 17:02:19.362" endtime="20211025 17:02:19.523"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:36.668" endtime="20211024 21:10:40.034"/>
+<status status="PASS" starttime="20211025 17:02:16.561" endtime="20211025 17:02:19.523"/>
 </kw>
 <kw name="click the 15 date" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=div:nth-of-type(7) &gt; .custom-control-label</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:40.036" level="INFO">Clicking element 'css=div:nth-of-type(7) &gt; .custom-control-label'.</msg>
-<status status="PASS" starttime="20211024 21:10:40.035" endtime="20211024 21:10:40.533"/>
+<msg timestamp="20211025 17:02:19.526" level="INFO">Clicking element 'css=div:nth-of-type(7) &gt; .custom-control-label'.</msg>
+<status status="PASS" starttime="20211025 17:02:19.525" endtime="20211025 17:02:19.680"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:40.035" endtime="20211024 21:10:40.533"/>
+<status status="PASS" starttime="20211025 17:02:19.523" endtime="20211025 17:02:19.680"/>
 </kw>
 <kw name="click the expert" library="kariyerNet">
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>css=div:nth-child(6) [class='title text-secondary t-2 w-5']</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20211024 21:10:40.534" endtime="20211024 21:10:41.998"/>
+<status status="PASS" starttime="20211025 17:02:19.681" endtime="20211025 17:02:20.018"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=div:nth-of-type(4) &gt; .bg-white.k-filter-checkbox .collapse.collapse-content.pt-2.show.w-100 &gt; div &gt; div:nth-of-type(4) &gt; .checkbox-items &gt; .k-checkbox-items &gt; .custom-checkbox.custom-control &gt; .custom-control-label &gt; .value.w-auto</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:42.000" level="INFO">Clicking element 'css=div:nth-of-type(4) &gt; .bg-white.k-filter-checkbox .collapse.collapse-content.pt-2.show.w-100 &gt; div &gt; div:nth-of-type(4) &gt; .checkbox-items &gt; .k-checkbox-items &gt; .custom-checkbox.custom-control &gt; .custom-control-label &gt; .value.w-auto'.</msg>
-<status status="PASS" starttime="20211024 21:10:41.999" endtime="20211024 21:10:42.485"/>
+<msg timestamp="20211025 17:02:20.019" level="INFO">Clicking element 'css=div:nth-of-type(4) &gt; .bg-white.k-filter-checkbox .collapse.collapse-content.pt-2.show.w-100 &gt; div &gt; div:nth-of-type(4) &gt; .checkbox-items &gt; .k-checkbox-items &gt; .custom-checkbox.custom-control &gt; .custom-control-label &gt; .value.w-auto'.</msg>
+<status status="PASS" starttime="20211025 17:02:20.018" endtime="20211025 17:02:20.129"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:40.533" endtime="20211024 21:10:42.485"/>
+<status status="PASS" starttime="20211025 17:02:19.681" endtime="20211025 17:02:20.130"/>
 </kw>
 <kw name="click the apply" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=[data-test="apply-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:42.487" level="INFO">Clicking element 'css=[data-test="apply-button"]'.</msg>
-<status status="PASS" starttime="20211024 21:10:42.486" endtime="20211024 21:10:42.673"/>
+<msg timestamp="20211025 17:02:20.130" level="INFO">Clicking element 'css=[data-test="apply-button"]'.</msg>
+<status status="PASS" starttime="20211025 17:02:20.130" endtime="20211025 17:02:20.229"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:42.486" endtime="20211024 21:10:42.674"/>
+<status status="PASS" starttime="20211025 17:02:20.130" endtime="20211025 17:02:20.229"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211024 21:10:47.699" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211024 21:10:42.674" endtime="20211024 21:10:47.699"/>
+<msg timestamp="20211025 17:02:25.236" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211025 17:02:20.229" endtime="20211025 17:02:25.236"/>
 </kw>
 <kw name="check the filters" library="kariyerNet">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Seçili Filtreler (4)</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211024 21:10:47.765" level="INFO">Current page contains text 'Seçili Filtreler (4)'.</msg>
-<status status="PASS" starttime="20211024 21:10:47.704" endtime="20211024 21:10:47.766"/>
+<msg timestamp="20211025 17:02:25.262" level="INFO">Current page contains text 'Seçili Filtreler (4)'.</msg>
+<status status="PASS" starttime="20211025 17:02:25.237" endtime="20211025 17:02:25.262"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>css=.chips-wrapper</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211024 21:10:47.797" level="INFO">Current page contains element 'css=.chips-wrapper'.</msg>
-<status status="PASS" starttime="20211024 21:10:47.766" endtime="20211024 21:10:47.797"/>
+<msg timestamp="20211025 17:02:25.276" level="INFO">Current page contains element 'css=.chips-wrapper'.</msg>
+<status status="PASS" starttime="20211025 17:02:25.262" endtime="20211025 17:02:25.276"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:47.700" endtime="20211024 21:10:47.797"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${FirstFullText}</var>
+<arg>css=.mb-3.search-result-section.t-6.text-secondary</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211025 17:02:25.316" level="INFO">${FirstFullText} = 9
+Mersin Yenişehir
+İş İlanları</msg>
+<status status="PASS" starttime="20211025 17:02:25.276" endtime="20211025 17:02:25.316"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${FirstValue}</var>
+<arg>re.search(r'\\d+', '''${FirstFullText}''').group(0)</arg>
+<arg>re</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211025 17:02:25.317" level="INFO">${FirstValue} = 9</msg>
+<status status="PASS" starttime="20211025 17:02:25.316" endtime="20211025 17:02:25.317"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${FirstValue}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20211025 17:02:25.318" level="INFO">${FirstValue} = 9</msg>
+<status status="PASS" starttime="20211025 17:02:25.317" endtime="20211025 17:02:25.318"/>
+</kw>
+<status status="PASS" starttime="20211025 17:02:25.236" endtime="20211025 17:02:25.318"/>
 </kw>
 <kw name="click the clear filters" library="kariyerNet">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=.clear-filter</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211024 21:10:47.798" level="INFO">Clicking element 'css=.clear-filter'.</msg>
-<status status="PASS" starttime="20211024 21:10:47.798" endtime="20211024 21:10:48.334"/>
+<msg timestamp="20211025 17:02:25.319" level="INFO">Clicking element 'css=.clear-filter'.</msg>
+<status status="PASS" starttime="20211025 17:02:25.319" endtime="20211025 17:02:25.562"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:47.797" endtime="20211024 21:10:48.334"/>
+<status status="PASS" starttime="20211025 17:02:25.318" endtime="20211025 17:02:25.562"/>
+</kw>
+<kw name="check the clear filters" library="kariyerNet">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211025 17:02:30.565" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211025 17:02:25.563" endtime="20211025 17:02:30.565"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>Seçili Filtreler (4)</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20211025 17:02:30.816" level="INFO">Current page does not contain text 'Seçili Filtreler (4)'.</msg>
+<status status="PASS" starttime="20211025 17:02:30.566" endtime="20211025 17:02:30.816"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ThirdFullText}</var>
+<arg>css=.mb-3.search-result-section.t-6.text-secondary</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211025 17:02:30.833" level="INFO">${ThirdFullText} = 43890
+İş İlanları</msg>
+<status status="PASS" starttime="20211025 17:02:30.816" endtime="20211025 17:02:30.833"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${ThirdValue}</var>
+<arg>re.search(r'\\d+', '''${ThirdFullText}''').group(0)</arg>
+<arg>re</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211025 17:02:30.834" level="INFO">${ThirdValue} = 43890</msg>
+<status status="PASS" starttime="20211025 17:02:30.833" endtime="20211025 17:02:30.834"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ThirdValue}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20211025 17:02:30.835" level="INFO">${ThirdValue} = 43890</msg>
+<status status="PASS" starttime="20211025 17:02:30.834" endtime="20211025 17:02:30.835"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${FirstValue}&lt;${ThirdValue}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211025 17:02:30.835" endtime="20211025 17:02:30.835"/>
+</kw>
+<status status="PASS" starttime="20211025 17:02:25.563" endtime="20211025 17:02:30.836"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211024 21:10:53.350" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211024 21:10:48.334" endtime="20211024 21:10:53.350"/>
+<msg timestamp="20211025 17:02:35.850" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211025 17:02:30.836" endtime="20211025 17:02:35.850"/>
 </kw>
 <kw name="close the browser" library="kariyerNet">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211024 21:10:53.351" endtime="20211024 21:10:55.731"/>
+<status status="PASS" starttime="20211025 17:02:35.851" endtime="20211025 17:02:38.255"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:53.350" endtime="20211024 21:10:55.731"/>
+<status status="PASS" starttime="20211025 17:02:35.850" endtime="20211025 17:02:38.255"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:21.299" endtime="20211024 21:10:55.731"/>
+<status status="PASS" starttime="20211025 17:02:01.032" endtime="20211025 17:02:38.255"/>
 </kw>
-<status status="PASS" starttime="20211024 21:10:21.298" endtime="20211024 21:10:55.733"/>
+<status status="PASS" starttime="20211025 17:02:01.031" endtime="20211025 17:02:38.256"/>
 </test>
-<status status="PASS" starttime="20211024 21:09:43.456" endtime="20211024 21:10:55.735"/>
+<status status="PASS" starttime="20211025 17:01:15.805" endtime="20211025 17:02:38.258"/>
 </suite>
 <statistics>
 <total>

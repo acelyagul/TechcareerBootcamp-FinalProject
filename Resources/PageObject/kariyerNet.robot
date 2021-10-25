@@ -5,6 +5,7 @@ Library  DebugLibrary
 *** Variables ***
 ${browser}    chrome
 ${HOMOPAGE}  https://www.kariyer.net/
+${parent element}  css=.mb-3.search-result-section.t-6.text-secondary
 
 *** Keywords ***
 open browser to index page
@@ -54,6 +55,9 @@ click the apply
 check the filters
     page should contain   Seçili Filtreler (4)
     page should contain element  css=.chips-wrapper
+    ${FirstFullText}=  Get Text    css=.mb-3.search-result-section.t-6.text-secondary
+    ${FirstValue}=   evaluate   re.search(r'\\d+', '''${FirstFullText}''').group(0)   re
+    set global variable  ${FirstValue}
 
 click on the remove district filter
     click element  css=div:nth-of-type(2) > .material-icons
@@ -68,9 +72,23 @@ click on the removed expert filter
 
 check the removed expert filer
     page should contain   Seçili Filtreler (2)
+    ${SecondFullText}=  Get Text    css=.mb-3.search-result-section.t-6.text-secondary
+    ${SecondValue}=   evaluate   re.search(r'\\d+', '''${SecondFullText}''').group(0)   re
+    set global variable  ${SecondValue}
+    Should Be True  ${FirstValue}<${SecondValue}
 
 click the clear filters
     click element  css=.clear-filter
 
+check the clear filters
+    sleep  5s
+    page should not contain  Seçili Filtreler (4)
+    ${ThirdFullText}=  Get Text    css=.mb-3.search-result-section.t-6.text-secondary
+    ${ThirdValue}=   evaluate   re.search(r'\\d+', '''${ThirdFullText}''').group(0)   re   #\\d boşluk
+    set global variable  ${ThirdValue}
+    Should Be True  ${FirstValue}<${ThirdValue}
+
+
 close the browser
     close browser
+

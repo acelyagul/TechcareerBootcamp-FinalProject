@@ -16,8 +16,10 @@ check the filter page
     sleep  5s
     kariyerNet.check the filters
     kariyerNet.click on the remove district filter
+    sleep  5s
     kariyerNet.check the removed district filter
     kariyerNet.click on the removed expert filter
+    sleep  5s
     kariyerNet.check the removed expert filer
     sleep  5s
     kariyerNet.close the browser
@@ -36,5 +38,6 @@ check the clear filters and date filter
     sleep  5s
     kariyerNet.check the filters
     kariyerNet.click the clear filters
+    kariyerNet.check the clear filters
     sleep  5s
     kariyerNet.close the browser
